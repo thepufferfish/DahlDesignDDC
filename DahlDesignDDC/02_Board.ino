@@ -19,7 +19,7 @@
 //------------------------------
 
 #define RESET_EEPROM 0
-#define USING_32U4EEPROM 0
+#define USING_32U4EEPROM 1
 
 //------------------------------
 //---RP2040 ADC OVERSAMPLING----
@@ -71,9 +71,9 @@
 #define SCL1PIN 3
 
 //PORT EXPANDER PCA9555
-#define USING_PCA9555 0
+#define USING_PCA9555 1
 #define PCA9555_I2C_NUMBER 0
-uint8_t PCA9555interruptPins [] = {99};
+uint8_t PCA9555interruptPins [] = {4,5};
 
 //16-BIT ADC ADS1115
 #define USING_ADS1115 0
